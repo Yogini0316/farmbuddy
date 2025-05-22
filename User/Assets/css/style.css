@@ -1,0 +1,456 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html::-webkit-scrollbar{
+	display: none;
+}
+body
+{
+    background: #DCDCDC;
+    max-width: 100vw;
+    width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
+    overflow-x: hidden; 
+}
+
+button {
+	cursor: pointer;
+}
+#badge
+{
+    position: absolute;
+    background-color: rgb(255, 30, 30);
+    color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 14px;
+    top: 10px;
+    right:158px;
+}
+#header-container
+{
+	position: fixed;
+	top: 0;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1.5fr 1.5fr 5fr 1fr;
+    font-family: 'Lato', sans-serif;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149); 
+}
+#shopName 
+{
+    font-size: 40px; 
+    font-family: 'Lato', sans-serif;
+}
+#shopName a
+{
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+#shopName img {
+	width: 200px;
+}
+#shopName > b
+{
+    font-weight: 900;
+    font: black;
+}
+
+#collection
+{
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#collection a
+{
+	margin: 0px 5px;
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+.search
+{
+    padding: 14px;
+    /* color: gray; */
+    color: rgb(29, 29, 29);
+    min-width: 25px;
+    text-align: center;
+    position: absolute;
+}
+
+
+
+.addedToCart
+{
+    font-size: 1.5em;
+    margin-right: 25px;
+}
+#user
+{
+    display: flex;
+    /* float: right; */
+    align-items: center;
+}
+
+.navdropdownlist {
+    list-style-type: none;
+}
+.userIcon
+{
+    font-size: 45px;
+}
+#input 
+{
+    width: 35em;
+    height: 3em;
+    padding: 2px 50px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    border-radius: 5px;
+}
+#input::placeholder
+{
+    font-weight: bold;
+}
+#input:focus
+{
+    outline: none;
+}
+#user a
+{
+    color: rgb(29, 29, 29)
+}
+
+/* ----------------------------- MEDIA QUERY --------------------------- */
+
+@media(max-width: 1300px)
+{
+    #collection
+    {
+        font-size: 13px;
+    }
+    #input 
+    {
+        width: 25em;
+    }
+}
+@media(max-width: 1212px)
+{
+    #collection
+    {
+        font-size: 13px;
+    }
+    #input 
+    {
+        width: 20em;
+    }
+    .addedToCart
+    {
+        font-size: 1.5em;
+        margin: 10px 20px;
+    }
+}
+
+@media(max-width: 1090px)
+{
+    #header-container
+    {
+        display: grid;
+        grid-template-columns: 1fr 2fr 0.5fr;
+    }
+    #search
+    {
+        display: none;
+    }
+}
+@media(max-width: 750px)
+{
+    #shopName
+    {
+        font-size: 28px;
+    }
+    #collection
+    {
+        font-size: 12px;
+    }
+    .userIcon
+    {
+        font-size: 35px;
+    }
+    .addedToCart
+    {
+        font-size: 1.2em;
+        margin: 10px 20px;
+    }
+}
+
+@media(max-width: 650px)
+{
+    #shopName
+    {
+        font-size: 24px;
+    }
+    #collection
+    {
+        font-size: 10px;
+    }
+    .userIcon
+    {
+        font-size: 30px;
+    }
+}
+@media(max-width: 550px)
+{
+    #header-container 
+    {
+        padding: 20px 25px;
+    }
+}
+
+/* badge media */
+
+@media(max-width: 1480px)
+{
+    #badge
+    {
+        right:150px;
+    }
+}
+@media(max-width: 1426px)
+{
+    #badge
+    {
+        right:142px;
+    }
+}
+@media(max-width: 1360px)
+{
+    #badge
+    {
+        right:136px;
+    }
+}
+@media(max-width: 1320px)
+{
+    #badge
+    {
+        right:129px;
+    }
+}
+@media(max-width: 1259px)
+{
+    #badge
+    {
+        right:119px;
+    }
+}
+@media(max-width: 1212px)
+{
+    #badge
+    {
+        right: 96px;
+    }
+}
+@media(max-width: 1155px)
+{
+    #badge
+    {
+        right: 87px;
+    }
+}
+@media(max-width: 1090px)
+{
+    #badge
+    {
+        right: 119px;
+    }
+}
+@media(max-width: 1030px)
+{
+    #badge
+    {
+        right: 109px;
+    }
+}
+@media(max-width: 970px)
+{
+    #badge
+    {
+        right: 100px;
+    }
+}
+@media(max-width: 910px)
+{
+    #badge
+    {
+        right: 94px;
+    }
+}
+@media(max-width: 850px)
+{
+    #badge
+    {
+        right: 87px;
+    }
+}
+@media(max-width: 750px)
+{
+    #badge
+    {
+        right: 87px;
+        padding: 3px 6px;
+        font-size: 12px;
+        top: 12px;
+    }
+}
+@media(max-width: 650px)
+{
+    #badge
+    {
+        right: 78px;
+    }
+}
+@media(max-width: 550px)
+{
+    #badge
+    {
+        right: 62px;
+        top: 18px;
+    }
+}
+
+/*		--End of header--	*/
+
+
+/*		--main section begins--		*/
+#main {
+	margin-top: 140px;
+	width: 100%;
+
+}
+
+/*		--end of main section--		*/
+
+
+/*		--Sections for variois categories--		*/
+
+section {
+
+	margin: auto;
+	width: 90%;
+	padding: 10px;
+	background: #fff;
+    margin-bottom: 14px;	
+}
+
+section .section-heading {
+	text-align: center;
+	color: blue;
+	font-weight: bolder;
+	font-size: 2rem;
+}
+
+
+section .products-fetcher {
+	display: grid;
+	justify-content: space-between;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section .products-fetcher .product-card {
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+	border: 3px solid #dfdfdf;
+	padding: 1px 1px;
+	border-radius: 4px;
+    transition: .3s;
+	cursor: pointer;
+    margin: 15px;
+}
+
+section .see-more a {       /*See more link text*/
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: lime;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px black;
+
+}
+.product-card:hover {
+    box-shadow: 2px 2px 4px grey;
+}
+
+.product-card .card-img {
+	width: 100%;
+    height: 65%;
+}
+
+.card-img img {
+	width: 60%;
+	height: 80%;
+}
+
+.product-card .card-buttons {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn-moredetails {
+	height: 100%;
+    width: 45%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background: blue;
+}
+
+.btn-addtocart {
+	height: 100%;
+    /*width: 45%;*/
+    padding: 12px;
+    border: none;
+    outline: none;
+    background: orange;
+}
+
+.see-more {
+    text-align: center;
+}
+
+
+
+
+/*      Styling for product_details.php     */
+
+.product_details_div {
+    width: 80%;
+    background: #fff;
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px gray;
+}
+
+.btn-group button{
+
+    margin: 6px;
+    padding: 6px;
+}

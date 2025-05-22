@@ -1,0 +1,6 @@
+.site-logo {
+  filter: saturate(2);
+  border-radius: 5px;
+  max-height: 45px;
+  margin-right: 6px;
+}
