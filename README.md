@@ -1,6 +1,6 @@
 # 🌾 FarmBuddy
 
-**FarmBuddy** (previously "CROPIFY") is an agricultural e-commerce web application that connects farmers and buyers through a simple and effective digital platform.
+**FarmBuddy** ("CROPIFY") is an agricultural e-commerce web application that connects farmers and buyers through a simple and effective digital platform.
 
 ---
 
