@@ -62,8 +62,7 @@ Start Apache and MySQL from XAMPP.
 Access it at:
 
 http://localhost/farmbuddy/
-📸 Screenshots
-(Add screenshots here: login screen, dashboard, etc.)
+
 
 📌 To-Do
  Add payment gateway integration
